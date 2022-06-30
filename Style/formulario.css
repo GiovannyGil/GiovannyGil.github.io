@@ -1,0 +1,147 @@
+:root{
+    --colorTextos: #4e4e4e;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+.cuerpo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 860px; /*tamanño el formulario en vertical*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+.cuerpo .form{
+    margin: auto;
+}
+form{
+    width: 500px;
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 6px 0 #ffffffcc; /*se crea una sombra en el fondo blaco del form*/
+    border-radius: 10px;
+}
+.form{
+    width: 100%;
+    margin: auto;
+
+}
+.form h1{
+    color: #000;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block; /*se ponen debajo de los inputs*/
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+
+}
+input:focus{
+    outline: none;
+    color: #5e5d5d;
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    /*posiciona el label dentro del input en la parte baja*/
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    /*genera la animacion de transicion de los labels en los inputs selecionacionados*/
+    top: -14px;
+    font-size: 12px;
+    color: #2193f6;
+
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0%;
+    position: absolute;
+    background: linear-gradient(to right, #56B4D3, #348F50); /*le da color al bordeinferior del input*/
+    transition: 0.3s ease width; /*animacion de abajo y arriba de los labels*/
+    left: 0;
+    
+}
+input:focus~.barra::before{
+   width: 100%;
+   
+}
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px ;
+    cursor: pointer; /*da la animacion de manito al pasar el cursos por el boton*/
+}
+button:hover{
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.seleccionador{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*establece las columnas y el ancho, 3 columnas y todo el ancho*/
+    grid-gap: 50px;
+    text-align: center;
+}
+.selector select{
+    color: #000;
+}
+.selector select option{
+    color: #000;
+}
+.ubicacion{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.sugerencias{
+    color: #000;
+    text-align: center;
+}
+.sugerencias textarea{
+    color: #000;
+}

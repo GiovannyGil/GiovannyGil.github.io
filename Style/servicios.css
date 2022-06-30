@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 880px;
+    background-color: #e8e8e8;
+    font-family:'Roboto',sans-serif;
+}
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*establece las columnas y el ancho, 3 columnas y todo el ancho*/
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.cont-tarjeta{
+    width: 300px;
+    height: 680px;
+    margin: auto;
+    transform: translateY(80px);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px #0000001a;
+    min-height: 300px;
+    max-width: 300px;
+}
+.cont-tarjeta__logo{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.cont-tarjeta__logo h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #505050;
+    font-weight: bolder;
+    font-size: 1.7rem;
+
+}
+.cont-tarjeta__logo img{
+    width: 150px;
+    height: 195px;
+    border-radius: 50%;
+    min-width: 200px;
+    max-width: 200px;
+}
+.cont-tarjeta__logo img:hover{
+    transform: scale(1.15);
+}
+.cont-tarjeta p{
+    text-align: center;
+    margin-top: 20px;
+    color: #9a9a9a;
+    font-weight: bolder;
+}
+.cont-tarjeta__iconos {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(100px);
+    justify-content: center;
+}
+.cont-tarjeta__iconos div>a{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+}
+.cont-tarjeta__iconos div{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.cont-tarjeta__iconos div >p{
+    margin-top: 10px;
+}
+.cont-tarjeta__iconos .div1{
+    background-color: #ff92926c;
+}
+.cont-tarjeta__iconos .div1:hover{
+    background-color:#ff9292e5 ;
+}
+.cont-tarjeta__iconos .div2{
+    background-color: #e6ddff;
+}
+.cont-tarjeta__iconos .div2:hover{
+    background-color:#b4a0ebb0
+}
+.cont-tarjeta article{
+    transform: translateY(130px);
+    text-align: center;
+    color:#505050;
+    font-weight: bolder;
+    line-height: 1.4rem;
+}
+article .precio:hover{
+    font-size: 20px;
+    color: #000000;
+}
+.cont-tarjeta__logo .info:hover{
+    font-size: 25px;
+    color: #12df20;
+}

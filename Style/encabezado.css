@@ -1,0 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #434343);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#000000, #434343 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.interior{
+    max-width: 100%;
+    padding: 0 16px; 
+    margin: auto;
+}
+.logo{
+    float: left ;
+    padding: 5px 20px 0;
+
+}
+.logo img{
+    height: 78px;
+}
+.logo img:hover{
+    transform: scale(1.15); /*Cuando pase el cursor por encima, se expande*/
+}
+.navegacion{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+}
+.navegacion ul{
+    list-style: none;
+    padding: 0 10px;
+
+}
+.navegacion ul li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+.navegacion ul li:hover{
+    transform: scale(1.15);
+}
+.navegacion ul li a{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition:  .3s linear;
+}
+.navegacion ul li a:hover{
+    color: #00c9bd;
+    transform: scale(1.15);
+}
+.navegacion ul li:hover .services{
+    display: block;
+}
+.navegacion .submenu .services{
+    display: none; /*  esconde el contenido del submenú */
+    background-color: #434343;
+    /* background: #000; 
+    background: #000000;  /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #000000, #434343);   Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right,#000000, #434343 ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    width: auto; /*adapta el campo del submenú al espacio de los texto para que se adapte*/
+    border-radius: 10px;
+}
+.navegacion .submenu .services li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+.navegacion .submenu .services li a{
+    display: block;
+
+}

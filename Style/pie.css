@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+
+}
+
+
+.pie-pagina{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*establece las columnas y el ancho, 3 columnas y todo el ancho*/
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /*centrar horizontalmente*/
+    align-items: center; /*centrar verticalmente*/
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box figure img:hover{
+    transform: scale(1.15);
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px ;
+    font-size: 35px;
+
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #00ffff;
+    
+}
+.pie-pagina .grupo-2{
+    padding: 15px;
+    text-align: center  ;
+    background-color: #151414a6;
+}
+@media screen and (max-width:800px) { /*para ponerlo responsive, visible bien en celular*/
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr); /*establece las columnas y el ancho, 3 columnas y todo el ancho*/
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

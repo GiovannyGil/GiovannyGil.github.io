@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/encabezado.css">
+    <link rel="stylesheet" href="Style/pie.css">
+    <link rel="stylesheet" href="Style/formulario.css">
+    <script src="https://kit.fontawesome.com/58fd1432fe.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="interior">
+            <a href="" class="logo"><img src="Src/logoTatau.jpg" alt=""></a> <!--logo de la pagina-->
+            <nav class="navegacion">
+                <ul> <!--Opciones de la barra-->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="submenu">
+                        <a href="Servcios.html">Servicios</a>
+                        <ul class="services">
+                            <li><a href="">Registrar</a></li>
+                            <li><a href="">Buscar</a></li>
+                            <li><a href="Crear.html">Crear</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Formulario.html">Formulario</a></li>
+                    <li><a href="Perfil.html">Perfil</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="cuerpo">
+        <form action="" method="POST" id="form">
+            <div class="form">
+                <h1>Contacto</h1>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required ><span class="barra"></span>
+                    <label for="">Nombre</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required ><span class="barra"></span>
+                    <label for="">Apellido</label>
+                </div>
+                <div class="grupo">
+                    <input type="email" name="" id="name" required ><span class="barra"></span>
+                    <label for="">Email</label>
+                </div>
+                <div class="grupo">
+                    <input type="number" name="" id="name" required ><span class="barra"></span>
+                    <label for="">Celular</label>
+                </div>
+                <div class="grupo">
+                    <input type="password" name="" id="name" required ><span class="barra"></span>
+                    <label for="">Password</label>
+                </div>
+                <div class="grupo">
+                    <input type="Date" name="" id="name" required step="1" min="1900-01-01" max="2022-12-31"
+                    value="1900-01-01">
+                    <span class="barra"></span>
+                    <label for="">Fecha de Nacimiento</label>
+                </div>
+                   <div class="grupo">
+                    <div class="seleccionador">
+                        <div class="selector">
+                            <select name="Sexo" id="Sexo" required>
+                            <option value="">Selecione</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        </div>
+                        <div class="selector">
+                            <select name="turno" id="turno" required>
+                            <option value="">Selecione</option>
+                            <option value="Mañana">Mañana</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Fin de Semana">Fin de Semana</option>
+                        </select>
+                        </div>  
+                   </div>
+                </div>
+                <div class="sugerencias">
+                <textarea id="sugerencias" cols="45" rows="5"></textarea>
+                </div>
+                
+
+    
+                <button type="submit">Contactar</button>
+    
+            </div>
+        </form>
+        <div class="ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1085106981495!2d-75.56409338529849!3d6.2494299954764285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f7f246b531%3A0xb3a03482c6ab20b4!2sPeriodista%20Park!5e0!3m2!1sen!2sco!4v1656487242720!5m2!1sen!2sco" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="">
+                        <img src="Src/logoTatau.jpg" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  nisi ducimus quod quis officiis eum optio possimus repudiandae blanditiis.</p>
+                <p>Lorem ipsum dolor, odit maxime, eius beatae incidunt nulla ieum optio possimus repudiandae blanditiis.</p>
+            </div>
+            <div class="box">
+                <h2>Sigueme</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Giovanny Chica</b> - Hecho por Gio</small>
+        </div>
+    </footer>
+</body>
+</html>
